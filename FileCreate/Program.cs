@@ -24,6 +24,7 @@ namespace FileCreate
                 Console.WriteLine($"wishlist directory does not exist.");
                 Directory.CreateDirectory(rootDirectory);
                 File.Create(fullFilepath);
+                Console.WriteLine($"File {fileName}.txt has been created.");
             }
             else
             {
